@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pantallas_login.MainPage"
+             BackgroundImageSource="fondo_1.jpg"
+             BackgroundColor="#f0f0f0">
+    <ContentPage.Content>
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Imagen del logo -->
+            <Image Source="logo_super.jpg" 
+                   HeightRequest="300" 
+                   WidthRequest="300" 
+                   Grid.Row="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"/>
+
+            <!-- Título de la app -->
+            <Label Text="Supermercado 'El Económico'" 
+                   FontSize="24" 
+                   TextColor="#000"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Grid.Row="1"
+                   Margin="0,10"/>
+
+            <!-- Descripción -->
+            <Label Text="¡Todo lo que necesitas!." 
+                   FontSize="18" 
+                   TextColor="#555"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.Row="2"
+                   Margin="0,10"/>
+
+            <!-- Botón de ingresar -->
+            <Button Text="Ingresar" 
+        FontSize="20" 
+        BackgroundColor="#FFA500" 
+        TextColor="White"
+        CornerRadius="10"
+        HorizontalOptions="Center" 
+        VerticalOptions="End"
+        Grid.Row="3"
+        WidthRequest="200"
+        HeightRequest="50"
+        Margin="0,10"
+        Clicked="OnIngresarButtonClicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
